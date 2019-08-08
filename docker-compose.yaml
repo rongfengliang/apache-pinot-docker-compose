@@ -1,0 +1,12 @@
+version: "3.7"
+services: 
+  app:
+    image: winedepot/pinot:0.1.4-SNAPSHOT
+    entrypoint: ./bin/quick-start-offline.sh
+    ports: 
+    - "9000:9000"
+    - "8099:8099"
+    - "8098:8098"
+    - "8097:8097"
+    - "8096:8096"
+    - "9514:9514"
